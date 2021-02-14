@@ -1,4 +1,4 @@
-# Simulate-DisneyStore-AddProductCart
+# Simulate-DisneyStore-AddProductToCart
 ## HTTP Requests by NodeJS Using Axios & Cheerio!
 
 This application is using HTTP requests to simulate  get product information , select size 
