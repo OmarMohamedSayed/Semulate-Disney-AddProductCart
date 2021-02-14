@@ -16,7 +16,7 @@ this application to make HTTP requests to Get Product Information , post Product
 ```
 ## Using Axios 
   to make HTTP Async/await requests
-  like make get request
+  ### Make Get Request 
   ```js
     //Get loading PeoductInfo Page
     await axios.get(getLoad).then((response) => {
