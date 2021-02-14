@@ -10,7 +10,7 @@ async function findProductAddToCart() {
     //init token
     let csrf_token = "";
     //init SizeName
-    let listOfSizesName = [];
+    let listOfSizesNames = [];
     //init limit quatity
     let availableQuantity = 0;
     //Get loading PeoductInfo Page
