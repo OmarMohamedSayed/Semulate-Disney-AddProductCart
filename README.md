@@ -42,19 +42,20 @@ this application to make HTTP requests to Get Product Information , post Product
   ```js
     //request which post data to variation and return with available size & quantity 
     await axios.post(
-      postVariation(postData['format'],postData['token'],postData['cartAction'],postData['pid'],postData['size'])).then((response) => {
-        if (response.status !== 200) return "No Product Found";
-        console.log("Valid Product");
-        //load allData from request
-        const getdata = response.data;
-        //Using Cheerio to select tags
-        const $ = cheerio.load(getdata);
-        //Get csrf_token
-        availableQuantity = $(quantitySelector)
-          .text()
-          .replace(")", "")
-          .split(" ");
-        availableQuantity = availableQuantity[1];
+      postVariation(postData['format'],postData['token'],postData['cartAction'],postData['pid'],postData['size']))
+        .then((response) => {
+          if (response.status !== 200) return "No Product Found";
+          console.log("Valid Product");
+          //load allData from request
+          const getdata = response.data;
+          //Using Cheerio to select tags
+          const $ = cheerio.load(getdata);
+          //Get csrf_token
+          availableQuantity = $(quantitySelector)
+            .text()
+            .replace(")", "")
+            .split(" ");
+          availableQuantity = availableQuantity[1];
     });
   ```
   ```js
