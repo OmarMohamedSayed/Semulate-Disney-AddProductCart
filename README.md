@@ -2,7 +2,7 @@
 ## HTTP Requests by NodeJS Using Axios & Cheerio!
 
 This application is using HTTP requests to simulate  get product information , select size 
-and quantity for the product and add the selected product to cart & add product to cart
+and quantity for the product and add the selected product to cart & AddProductToCart
 
 [![npm package](https://nodei.co/npm/request.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/request/)
 
