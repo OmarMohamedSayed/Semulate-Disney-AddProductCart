@@ -39,7 +39,7 @@ This application to Simulate by making HTTP requests to Get Product Information 
             : ""
         );
   ```
-  ### Make Get Request 
+  ### Make Post Requests 
   ```js
     //request which post data to variation and return with available size & quantity 
     await axios.post(
