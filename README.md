@@ -1,7 +1,8 @@
-# Semulate-DisneyStore-AddProductCart
+# Simulate-DisneyStore-AddProductCart
 ## HTTP Requests by NodeJS Using Axios & Cheerio!
 
-This application to Simulate by making HTTP requests to Get Product Information , post Product with sizes to find available quantity from https://www.shopdisney.co.uk & add product to cart
+This application is using HTTP requests to simulate  get product information , select size 
+and quantity for the product and add the selected product to cart & add product to cart
 
 [![npm package](https://nodei.co/npm/request.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/request/)
 
@@ -15,8 +16,8 @@ This application to Simulate by making HTTP requests to Get Product Information 
   -npm i axios cheerio 
 ```
 ## Using Axios 
-  to make HTTP Async/await requests
-  ### Make Get Request 
+  using HTTP Async/await requests
+  ### Using Get Request 
   ```js
     //Get loading PeoductInfo Page
     await axios.get(getLoad).then((response) => {
@@ -39,7 +40,7 @@ This application to Simulate by making HTTP requests to Get Product Information 
             : ""
         );
   ```
-  ### Make Post Requests 
+  ### Using Post Requests 
   ```js
     //request which post data to variation and return with available size & quantity 
     await axios.post(
